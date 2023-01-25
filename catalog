@@ -3,13 +3,6 @@
   <head>
     <meta charset="utf-8">
     <title>Каталог гостиниц</title>
-    <style>
-      li {
-       list-style-type: none;
-      }
-      ul {
-       padding-left: 0;
-      }
     </style>
   </head>
   <body>
@@ -60,7 +53,7 @@
           </li>
         </ul>
       </header>
-      <section class="catalog-hotels">
+      <section class="catalog-filter">
         <h2 class="visually-hidden">Список гостиниц с фильтрами</h2>
         <form class="catalog-filter" action="https://echo.htmlacademy.ru/" method="get">
 
@@ -125,7 +118,9 @@
         </fieldset>
 
         </form>
-        <p class="catalog-filter-result">Найдено гостиниц: 38</p>
+      </section>
+      <section class="catalog-hotels">
+        <p class="catalog-hotels-result">Найдено гостиниц: 38</p>
         <select class="select-control" aria-label="Сортировка">
           <option value="cheap">Сначала дешёвое</option>
           <option value="expensive">Сначала дорогое</option>
@@ -237,8 +232,6 @@
           </li>
         </ul>
       </section>
-    </main>
-    <footer class="page-footer">
       <section class="newsletter">
         <h2 class="newsletter-title">Подпишитесь на рассылку</h2>
         <span>Только полезная информация и никакого спама,<br>
@@ -246,10 +239,12 @@
         <form class="newsletter-form" action="https://echo.htmlacademy.ru/" method="post">
           <input class="field" placeholder="Ваш email" type="email" name="newsletter-email" id="newsletter-email" required>
           <button class="button newsletter-button" type="submit">
-            <span class="visually-hidden">Подписаться</span>
+            <span>Подписаться</span>
           </button>
         </form>
       </section>
+    </main>
+    <footer class="page-footer">
       <section class="footer-social">
         <h2 class="main-footer-title visually-hidden">Социальные сети</h2>
         <ul class="footer-social-list">

@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8" />
     <title>Седона</title>
+    <link rel="stylesheet" href="styles/styles.css">
   </head>
   <body>
     <header class="page-header">
@@ -34,12 +35,12 @@
           <li class="navigation-item">
             <a class="navigation-link" href="#">
               <span class="visually-hidden">Избранное</span>
-              <span>12</span>
+              <span class="favorites">12</span>
             </a>
           </li>
           <li class="navigation-item">
-            <a class="navigation-link" href="https://echo.htmlacademy.ru/"
-              >Хочу сюда</a
+            <a class="navigation-link button-form" href="https://echo.htmlacademy.ru/"
+              >Хочу сюда!</a
             >
           </li>
         </ul>
@@ -53,11 +54,11 @@
         height="352"
         alt="Добро пожаловать в великолепную Седону, потому что Гранд Каньон - отстой."
       />
-      <h1>
+      <h1 class="main-promo-text">
         Седона — небольшой городок в Аризоне,<br />
         заслуживающий большего!
       </h1>
-      <p>Рассмотрим причины, по которым Седона круче, чем Гранд-Каньон!</p>
+      <p class="main-promo-text">Рассмотрим причины, по которым Седона круче, чем Гранд-Каньон!</p>
       <section class="advantages">
         <h2 class="visually-hidden">Преимущества</h2>
         <ul class="advantages-list">
@@ -105,11 +106,13 @@
           </li>
         </ul>
       </section>
-      <h2>
-        Приезжайте в Седону отдохнуть<br />
-        в комфорте и уюте!
-      </h2>
-      <p>Опытный персонал и качественное обслуживание!</p>
+      <div class="promo-services-text">
+        <h2>
+          Приезжайте в Седону отдохнуть<br />
+          в комфорте и уюте!
+        </h2>
+        <p>Опытный персонал и качественное обслуживание!</p>
+      </div>
       <section class="services">
         <h2 class="visually-hidden">Услуги</h2>
         <ul class="services-list">
@@ -151,19 +154,15 @@
         </ul>
       </section>
       <section class="hotel-seach">
-        <h2 class="hotels-seach-title">Заинтересовались?</h2>
-        <span
-          >Укажите предполагаемые даты поездки,<br />
-          и мы покажем вам лучшие предложения гостиниц в Седоне</span
-        >
-        <a class="button" href="catalog.html">ПОИСК ГОСТИНИЦЫ В СЕДОНЕ</a>
+        <h2>Заинтересовались?</h2>
+        <span>Укажите предполагаемые даты поездки,<br />
+          и мы покажем вам лучшие предложения гостиниц в Седоне</span>
+        <a class="button hotels-seach" href="catalog.html">ПОИСК ГОСТИНИЦЫ В СЕДОНЕ</a>
       </section>
-      <section class="newsletter">
-        <h2 class="newsletter-title">Подпишитесь на рассылку</h2>
-        <span
-          >Только полезная информация и никакого спама,<br />
-          честное бойскаутское!</span
-        >
+      <section class="newsletter-page">
+        <h2>Подпишитесь на рассылку</h2>
+        <span>Только полезная информация и никакого спама,<br />
+          честное бойскаутское!</span>
         <form
           class="newsletter-form"
           action="https://echo.htmlacademy.ru/"
@@ -171,13 +170,13 @@
         >
           <input
             class="field"
-            placeholder="Ваш email"
+            placeholder="Ваш-email"
             type="email"
             name="newsletter-email"
             id="newsletter-email"
             required
           />
-          <button class="button newsletter-button" type="submit">
+          <button class="newsletter-button" type="submit">
             <span class="visually-hidden">Подписаться</span>
           </button>
         </form>

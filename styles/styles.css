@@ -614,10 +614,10 @@ img.main-page-promo {
 /* Hotel cards */
 
 .hotel-list {
-  /* display: grid;
+  display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-column-gap: 20px;
-  grid-row-gap: 20px; */
+  grid-row-gap: 20px;
   padding-left: 0;
   list-style-type: none;
   margin-top: 45px;
@@ -630,10 +630,10 @@ img.main-page-promo {
 }
 
 .hotel-card-info {
-  /* display: grid;
+  display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-column-gap: 20px;
-  grid-row-gap: 16px; */
+  grid-row-gap: 16px;
 }
 
 .hotel-card-title {

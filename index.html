@@ -3,7 +3,8 @@
   <head>
     <meta charset="utf-8" />
     <title>Седона</title>
-    <link rel="stylesheet" href="styles/styles.css" />
+    <link rel="stylesheet" href="styles/styles.css">
+    <link rel="icon" href="images/favicon.ico"><!-- 32×32 -->
   </head>
 
   <body>
@@ -70,6 +71,7 @@
           alt="Добро пожаловать в великолепную Седону, потому что Гранд Каньон - отстой."
         />
       </section>
+
       <section class="advantages">
         <div class="banner-advantages">
           <p class="promo-title-text">Седона — небольшой городок в Аризоне,<br />
@@ -134,6 +136,7 @@
           </li>
         </ul>
       </section>
+
       <section class="services">
         <h2 class="visually-hidden">Услуги</h2>
         <div class="banner-services">
@@ -159,6 +162,7 @@
           </li>
         </ul>
       </section>
+
       <section class="hotel-search">
         <h2 class="hotel-search-title">Заинтересовались?</h2>
         <p class="hotel-search-text">Укажите предполагаемые даты поездки,<br>
@@ -186,6 +190,7 @@
         </form>
       </section>
     </main>
+
     <footer class="page-footer">
       <section class="footer-social">
         <h2 class="main-footer-title visually-hidden">
@@ -212,11 +217,11 @@
           </li>
         </ul>
       </section>
+
       <section class="footer-contacts">
         <h2 class="visually-hidden">Контакты</h2>
         <a class="footer-contacts-telephone" href="tel:+78128121212"
-          >+7 (812) 812-12-12</a
-        >
+          >+7 (812) 812-12-12</a>
       </section>
       <section class="footer-academy-logo">
         <a class="footer-logo-link" href="https://htmlacademy.ru/">
@@ -238,5 +243,67 @@
         </a>
       </section>
     </footer>
+
+    <div class="modal-container modal-container-close">
+      <div class="modal">
+        <button class="modal-close-button" type="button">
+          <svg class="modal-close" aria-hidden="true" focusable="false" width="15" height="15" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+            <path d="M14.5 1.78 13.2.5 7.49 6.2 1.79.5.48 1.8l5.7 5.7-5.7 5.7 1.3 1.3 5.7-5.7 5.7 5.7 1.3-1.3-5.7-5.7 5.7-5.7Z"/>
+          </svg>
+          <span class="visually-hidden">Закрыть</span>
+        </button>
+        <section class="modal-content">
+          <h2 class="modal-title">Поиск гостиницы в Седоне</h2>
+          <form action="https://echo.htmlacademy.ru/" method="post" class="modal-form">
+            <!-- Check in fields-->
+            <label for="check-in" class="modal-form-check-in-label modal-text">Дата заезда:</label>
+            <div class="modal-form-check-in-field">
+              <input class="search-input-date search-input" id="check-in" type="text" value="27 апреля 2020" placeholder="Укажите дату" required>
+              <span class="visually-hidden">Выбрать дату заезда</span>
+              <svg class="input-calendar" aria-hidden="true" focusable="false" width="16" height="15" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                <path d="M5.75 10c.3 0 .5-.2.5-.5s-.2-.5-.5-.5-.5.2-.5.5.2.5.5.5Z"/>
+                <path d="M15 2h-2V0h-1v2H4V0H3v2H1c-.6 0-1 .4-1 1v11c0 .5.4 1 1 1h14c.5 0 1-.5 1-1V3c0-.6-.5-1-1-1Zm0 12H1V7h14v7ZM1 6V3h2v2h1V3h8v2h1V3h2v3H1Z"/>
+                <path d="M8 10c.3 0 .5-.2.5-.5S8.3 9 8 9s-.5.2-.5.5.2.5.5.5Zm2.25 0c.3 0 .5-.2.5-.5s-.2-.5-.5-.5-.5.2-.5.5.2.5.5.5Zm-4.5 1c-.3 0-.5.2-.5.5s.2.5.5.5.5-.2.5-.5-.2-.5-.5-.5ZM3.5 10c.3 0 .5-.2.5-.5S3.8 9 3.5 9s-.5.2-.5.5.2.5.5.5Zm0 1c-.3 0-.5.2-.5.5s.2.5.5.5.5-.2.5-.5-.2-.5-.5-.5ZM8 11c-.3 0-.5.2-.5.5s.2.5.5.5.5-.2.5-.5-.2-.5-.5-.5Zm2.25 0c-.3 0-.5.2-.5.5s.2.5.5.5.5-.2.5-.5-.2-.5-.5-.5Zm2.25-1c.3 0 .5-.2.5-.5s-.2-.5-.5-.5-.5.2-.5.5.2.5.5.5Zm0 1c-.3 0-.5.2-.5.5s.2.5.5.5.5-.2.5-.5-.2-.5-.5-.5Z"/>
+              </svg>
+              <div class="modal-form-error">Мы не можем отправить вас в прошлое.</div>
+            </div>
+            <!-- Check out fields-->
+            <label for="check-out" class="modal-form-check-out-label modal-text">Дата выезда:</label>
+            <div class="modal-form-check-out-field">
+              <span class="visually-hidden">Выбрать дату выезда</span>
+              <input class="search-input-date search-input" id="check-out" type="text" value="1 сентября 2023" placeholder="Укажите дату" required>
+              <svg class="input-calendar" aria-hidden="true" focusable="false" width="16" height="15" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                <path d="M5.75 10c.3 0 .5-.2.5-.5s-.2-.5-.5-.5-.5.2-.5.5.2.5.5.5Z"/>
+                <path d="M15 2h-2V0h-1v2H4V0H3v2H1c-.6 0-1 .4-1 1v11c0 .5.4 1 1 1h14c.5 0 1-.5 1-1V3c0-.6-.5-1-1-1Zm0 12H1V7h14v7ZM1 6V3h2v2h1V3h8v2h1V3h2v3H1Z"/>
+                <path d="M8 10c.3 0 .5-.2.5-.5S8.3 9 8 9s-.5.2-.5.5.2.5.5.5Zm2.25 0c.3 0 .5-.2.5-.5s-.2-.5-.5-.5-.5.2-.5.5.2.5.5.5Zm-4.5 1c-.3 0-.5.2-.5.5s.2.5.5.5.5-.2.5-.5-.2-.5-.5-.5ZM3.5 10c.3 0 .5-.2.5-.5S3.8 9 3.5 9s-.5.2-.5.5.2.5.5.5Zm0 1c-.3 0-.5.2-.5.5s.2.5.5.5.5-.2.5-.5-.2-.5-.5-.5ZM8 11c-.3 0-.5.2-.5.5s.2.5.5.5.5-.2.5-.5-.2-.5-.5-.5Zm2.25 0c-.3 0-.5.2-.5.5s.2.5.5.5.5-.2.5-.5-.2-.5-.5-.5Zm2.25-1c.3 0 .5-.2.5-.5s-.2-.5-.5-.5-.5.2-.5.5.2.5.5.5Zm0 1c-.3 0-.5.2-.5.5s.2.5.5.5.5-.2.5-.5-.2-.5-.5-.5Z"/>
+              </svg>
+              <div class="modal-form-info">На эти даты есть свободные номера. Пока есть.</div>
+            </div>
+            <!-- Adults count fields-->
+            <label class="modal-form-adults-label modal-text">Взрослые:</label>
+            <div class="modal-form-counters">
+              <div class="modal-form-field">
+                <button class="modal-form-counter-control plus-minus" type="button">-</button>
+                <span class="modal-form-counter-control">2</span>
+                <button class="modal-form-counter-control plus-minus" type="button">+</button>
+              </div>
+              <!-- Childs count fields-->
+              <label class="modal-form-children-label modal-text">Дети:</label>
+              <div class="modal-form-tooltip">
+                <button class="tooltip-toggle" type="button" aria-labelledby="tooltip-label-children"></button>
+                <p class="tooltip-text" role="tooltip" id="tooltip-label-children" >Укажите количество детей, которые будут с вами, возраст которых от 6 до 18 лет. Дети до 6 лет размещаются бесплатно.</p>
+              </div>
+              <div class="modal-form-field">
+                <button class="modal-form-counter-control plus-minus" type="button">-</button>
+                <span class="modal-form-counter-control">2</span>
+                <button class="modal-form-counter-control plus-minus" type="button">+</button>
+              </div>
+            </div>
+            <button class="modal-form-submit button-secondary">Найти</button>
+          </form>
+        </section>
+      </div>
+    </div>
   </body>
+
 </html>

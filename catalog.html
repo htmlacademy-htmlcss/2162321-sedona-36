@@ -4,9 +4,11 @@
     <meta charset="utf-8" />
     <title>Каталог гостиниц</title>
     <link rel="stylesheet" href="styles/styles.css">
+    <link rel="icon" href="images/favicon.ico"><!-- 32×32 -->
   </head>
+
   <body>
-    <header class="catalog-header">
+    <header class="page-header">
       <nav class="navigation">
         <a class="navigation-logo" href="index.html">
           <img
@@ -18,13 +20,13 @@
         </a>
         <ul class="navigation-list">
           <li class="navigation-item">
-            <a class="navigation-link link-state" href="index.html">Главная</a>
+            <a class="navigation-link" href="#">Главная</a>
           </li>
           <li class="navigation-item">
             <a class="navigation-link link-state" href="#">О Седоне</a>
           </li>
           <li class="navigation-item">
-            <a class="navigation-link navigation-link-current" href="catalog.html">Гостиницы</a>
+            <a class="navigation-link navigation-link-current link-state" href="catalog.html">Гостиницы</a>
           </li>
         </ul>
         <ul class="navigation-list navigation-user">
@@ -51,14 +53,13 @@
             </a>
           </li>
           <li class="navigation-item">
-            <a
-              class="navigation-link navigation-button button-primary"
-              href="https://echo.htmlacademy.ru/"
-              >Хочу сюда!</a>
+            <a class="navigation-button button-primary"
+              href="https://echo.htmlacademy.ru/">Хочу сюда!</a>
           </li>
         </ul>
       </nav>
     </header>
+
     <main class="main-inner">
       <div class="inner-header">
         <h1 class="inner-header-title">Гостиницы Седоны</h1>
@@ -80,6 +81,7 @@
             <a class="breadcrumbs-link">Гостиницы</a>
           </li>
         </ul>
+
         <section class="catalog-filter">
           <h2 class="visually-hidden">Поиск гостиниц с фильтрами</h2>
           <form
@@ -92,28 +94,30 @@
                 <li class="catalog-filter-item">
                   <label class="control">
                     <input
-                      class="control-input"
+                      class="control-input visually-hidden"
                       type="checkbox"
                       name="swimming-pool"
                       checked>
-                    Бассейн
+                    <span class="control-customMark"></span>
+                    <span class="control-customLabel">Бассейн</span>
                   </label>
                 </li>
                 <li class="catalog-filter-item">
                   <label class="control">
                     <input
-                      class="control-input"
+                      class="control-input visually-hidden"
                       type="checkbox"
                       name="parking"
-                      checked
-                    />
-                    Парковка
+                      checked>
+                    <span class="control-customMark"></span>
+                    <span class="control-customLabel">Парковка</span>
                   </label>
                 </li>
                 <li class="catalog-filter-item">
                   <label class="control">
-                    <input class="control-input" type="checkbox" name="wifi" />
-                    Wi-Fi
+                    <input class="control-input visually-hidden" type="checkbox" name="wifi">
+                    <span class="control-customMark"></span>
+                    <span class="control-customLabel">Wi-Fi</span>
                   </label>
                 </li>
               </ul>
@@ -125,35 +129,35 @@
                 <li class="catalog-filter-item">
                   <label class="control">
                     <input
-                      class="control-input"
+                      class="control-input visually-hidden"
                       type="radio"
                       name="catalog-group"
                       value="hotel"
-                      checked
-                    />
-                    Гостиница
+                      checked>
+                    <span class="control-mark"></span>
+                    <span class="control-customLabel">Гостиница</span>
                   </label>
                 </li>
                 <li class="catalog-filter-item">
                   <label class="control">
                     <input
-                      class="control-input"
+                      class="control-input visually-hidden"
                       type="radio"
                       name="catalog-group"
-                      value="housing"
-                    />
-                    Жилье
+                      value="housing">
+                    <span class="control-mark"></span>
+                    <span class="control-customLabel">Жилье</span>
                   </label>
                 </li>
                 <li class="catalog-filter-item">
                   <label class="control">
                     <input
-                      class="control-input"
+                      class="control-input visually-hidden"
                       type="radio"
                       name="catalog-group"
-                      value="apartments"
-                    />
-                    Апартаменты
+                      value="apartments">
+                    <span class="control-mark"></span>
+                    <span class="control-customLabel">Апартаменты</span>
                   </label>
                 </li>
               </ul>
@@ -163,23 +167,32 @@
               <legend class="catalog-filter-title">Стоимость, ₽:</legend>
               <label class="control-label">
                 <input
-                  class="field"
+                  class="field price-from"
                   placeholder="от"
                   type="text"
                   name="price-filter"
-                  value="0"
-                />
+                  value="0">
+                <span>от</span>
               </label>
               <label class="control-label">
                 <input
-                  class="field"
+                  class="field price-to"
                   placeholder="до"
                   type="text"
                   name="price-filter"
-                  value="9000"
-                />
+                  value="9000">
+                <span>до</span>
               </label>
+              <div class="range">
+                <div class="range-scale">
+                  <div class="range-bar" style="left: 0; width: 212px;">
+                    <button type="button" class="range-toggle toggle-min"></button>
+                    <button type="button" class="range-toggle toggle-max"></button>
+                  </div>
+                </div>
+              </div>
             </fieldset>
+
             <div class="catalog-filter-buttons">
               <button class="button button-apply button-secondary" type="submit" name="apply">
                 Применить
@@ -194,6 +207,7 @@
           </form>
         </section>
       </div>
+
       <section class="catalog-hotels">
         <h2 class="visually-hidden">Список гостиниц с фильтрами</h2>
         <div class="catalog-hotels-sorting">
@@ -220,6 +234,7 @@
             </a>
           </div>
         </div>
+
         <ul class="hotel-list">
           <li class="hotel-card">
             <a class="hotel-card-link" href="#">
@@ -404,6 +419,7 @@
         </form>
       </section>
     </main>
+
     <footer class="page-footer">
       <section class="footer-social">
         <h2 class="main-footer-title visually-hidden">

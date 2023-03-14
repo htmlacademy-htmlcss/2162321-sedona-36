@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="ru">
   <head>
-    <meta charset="utf-8" />
+    <meta charset="utf-8">
     <title>Седона</title>
     <link rel="stylesheet" href="styles/styles.css">
     <link rel="icon" href="images/favicon.ico"><!-- 32×32 -->
@@ -29,7 +29,7 @@
             <a class="navigation-link link-state" href="catalog.html">Гостиницы</a>
           </li>
         </ul>
-        <ul class="navigation-list navigation-user">
+        <ul class="navigation-user">
           <li class="navigation-item navigation-seach">
             <a class="navigation-link link-user-state" href="#">
               <img
@@ -63,18 +63,16 @@
     <main class="main-container page-main">
       <section class="main-page-promo">
         <h1 class="visually-hidden">Седона</h1>
-        <img
-          class="main-page-promo"
+        <img class="main-page-promo"
           src="images/welcome.svg"
           width="458"
           height="352"
-          alt="Добро пожаловать в великолепную Седону, потому что Гранд Каньон - отстой."
-        />
+          alt="Добро пожаловать в великолепную Седону, потому что Гранд Каньон - отстой.">
       </section>
 
       <section class="advantages">
         <div class="banner-advantages">
-          <p class="promo-title-text">Седона — небольшой городок в Аризоне,<br />
+          <p class="promo-title-text">Седона — небольшой городок в Аризоне,<br>
             заслуживающий большего!
           </p>
           <p class="advantages-text">
@@ -95,8 +93,7 @@
               src="images/advantage.jpg"
               width="800"
               height="384"
-              alt="Вид на город."
-            />
+              alt="Вид на город.">
           </li>
           <li class="advantages-item">
             <div class="advantages-infoWrapper">
@@ -130,7 +127,8 @@
               height="385"
               alt="Вид на горы.">
             <div class="advantages-infoWrapper">
-              <h3 class="advantages-title advantages-image">Там есть мост дьявола</h3>
+              <h3 class="advantages-title advantages-image">Там есть<br>
+                мост дьявола</h3>
               <p class="advantages-description">Да, по нему можно пройти! Если вы осмелитесь, разумеется</p>
             </div>
           </li>
@@ -140,7 +138,7 @@
       <section class="services">
         <h2 class="visually-hidden">Услуги</h2>
         <div class="banner-services">
-          <p class="promo-services-text">Приезжайте в Седону отдохнуть<br />
+          <p class="promo-services-text">Приезжайте в Седону отдохнуть<br>
             в комфорте и уюте!
           </p>
           <p class="services-text">Опытный персонал и качественное обслуживание!</p>
@@ -148,17 +146,17 @@
         <ul class="services-list">
           <li class="services-item">
             <h3 class="service-title service-accommodation">Жилье</h3>
-            <p class="services-item-text">Рекомендуем пожить в настоящем мотеле, всё как в кино!</p>
+            <p class="services-item-text">Рекомендуем пожить в&nbsp;настоящем мотеле,<br>всё как в кино!</p>
           </li>
           <li class="services-item">
             <h3 class="service-title service-food">Еда</h3>
             <p class="services-item-text">
-              Всегда заказывайте топовый фирменный бургер, вы не разочаруетесь!
+              Всегда заказывайте<br>топовый фирменный бургер, вы не разочаруетесь!
             </p>
           </li>
           <li class="services-item">
             <h3 class="service-title service-souvenirs">Сувениры</h3>
-            <p class="services-item-text">Не только китайского, но и настоящего местного производства!</p>
+            <p class="services-item-text">Не только китайского,<br> но и настоящего местного производства!</p>
           </li>
         </ul>
       </section>
@@ -169,9 +167,10 @@
           и мы покажем вам лучшие предложения гостиниц в Седоне</p>
         <a class="button-hotels-search button-primary" href="#">поиск гостиницы в Седоне</a>
       </section>
+
       <section class="newsletter-page">
         <h2 class="newsletter-page-title">Подпишитесь на рассылку</h2>
-        <p>Только полезная информация и никакого спама,<br />
+        <p class="newsletter-text">Только полезная информация и никакого спама,<br>
           честное бойскаутское!</p>
         <form
           class="newsletter-form"
@@ -179,7 +178,7 @@
           method="post">
           <input
             class="field"
-            placeholder="Ваш-email"
+            placeholder="Ваш e-mail"
             type="email"
             name="newsletter-email"
             id="newsletter-email"
@@ -224,6 +223,7 @@
           >+7 (812) 812-12-12</a>
       </section>
       <section class="footer-academy-logo">
+        <h2 class="visually-hidden">Логотип HTML Академии</h2>
         <a class="footer-logo-link" href="https://htmlacademy.ru/">
           <svg width="115" height="34" viewBox="0 0 115 34" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path d="M0 13.2564V15.8564H2.5V13.2564H0Z" fill="black"/>
@@ -283,9 +283,9 @@
             <label class="modal-form-adults-label modal-text">Взрослые:</label>
             <div class="modal-form-counters">
               <div class="modal-form-field">
-                <button class="modal-form-counter-control plus-minus" type="button">-</button>
-                <span class="modal-form-counter-control">2</span>
-                <button class="modal-form-counter-control plus-minus" type="button">+</button>
+                <button class="button-counter button-minus" type="button"></button>
+                <input class="search-input search-input-number" type="number" name="adults" min="0" id="adults" value="2" required>
+                <button class="button-counter button-plus" type="button"></button>
               </div>
               <!-- Childs count fields-->
               <label class="modal-form-children-label modal-text">Дети:</label>
@@ -294,12 +294,12 @@
                 <p class="tooltip-text" role="tooltip" id="tooltip-label-children" >Укажите количество детей, которые будут с вами, возраст которых от 6 до 18 лет. Дети до 6 лет размещаются бесплатно.</p>
               </div>
               <div class="modal-form-field">
-                <button class="modal-form-counter-control plus-minus" type="button">-</button>
-                <span class="modal-form-counter-control">2</span>
-                <button class="modal-form-counter-control plus-minus" type="button">+</button>
+                <button class="button-counter button-minus" type="button"></button>
+                <input class="search-input search-input-number" type="number" name="children" min="0" id="children" value="2" required>
+                <button class="button-counter button-plus" type="button"></button>
               </div>
             </div>
-            <button class="modal-form-submit button-secondary">Найти</button>
+            <button class="modal-form-submit button-form button-secondary">Найти</button>
           </form>
         </section>
       </div>
